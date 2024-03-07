@@ -22,6 +22,12 @@ Console.WriteLine(newFinancialProductIntroMessage);
 Console.WriteLine("Here's a quick comparison:\n");
 
 string comparisonMessage = "";
-
+comparisonMessage += currentProduct.PadRight(17) + " ";
+comparisonMessage += $"{currentReturn:P2}".PadLeft(8) + " ";
+comparisonMessage += $"{currentProfit:C2}".PadLeft(16);
+comparisonMessage += "\n";
+comparisonMessage += newProduct.PadRight(17) + " ";
+comparisonMessage += $"{newReturn:P2}".PadLeft(8) + " ";
+comparisonMessage += $"{newProfit:C2}".PadLeft(16);
 
 Console.WriteLine(comparisonMessage);
