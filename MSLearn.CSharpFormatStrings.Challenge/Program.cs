@@ -1,4 +1,7 @@
-﻿string customerName = "Ms. Barros";
+﻿using System.Globalization;
+CultureInfo.CurrentCulture = new CultureInfo("en-US");
+
+string customerName = "Ms. Barros";
 
 string currentProduct = "Magic Yield";
 int currentShares = 2975000;
